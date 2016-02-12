@@ -1,0 +1,35 @@
+h1{
+    border:2px black solid;
+    padding:3px;
+    background-color:rgb(153, 0, 0);
+    text-align:center;
+}
+body{
+     background-image: url(https://newevolutiondesigns.com/images/freebies/black-white-background-8.jpg);
+
+}
+.oP{
+    border:3px solid green;
+    background-color:white;
+    text-align:left;
+    
+    
+}
+.you{
+    border:3px solid green;
+    background-color:white;
+    text-align:left;
+}
+input[type=button]{
+    background-color:rgb(204, 255, 51);
+    border:solid 1px red;
+    padding:6px;
+    font-weight:bold;
+    font-style:italic;
+    font-size:18px;
+    text-align:right;
+}
+p{
+    padding:5px;
+    font-size:20px;
+}
