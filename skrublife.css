@@ -11,14 +11,13 @@ body{
 .oP{
     border:3px solid green;
     background-color:white;
-    text-align:left;
+    
     
     
 }
 .you{
     border:3px solid green;
     background-color:white;
-    text-align:left;
 }
 input[type=button]{
     background-color:rgb(204, 255, 51);
@@ -27,9 +26,25 @@ input[type=button]{
     font-weight:bold;
     font-style:italic;
     font-size:18px;
-    text-align:right;
 }
 p{
     padding:5px;
     font-size:20px;
+}
+#navbar{
+    text-align:center;
+}  
+
+#navbar li{
+    display:inline-block;
+    border:2px solid blue;
+    padding:15px;
+    background-color:white;
+    font-weight:bold;
+}
+li a:hover {
+    background-color: red;
+    color: white;
+    padding:13px;
+    
 }

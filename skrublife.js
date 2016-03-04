@@ -128,21 +128,6 @@ function addText1() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //will, is that you?, where are you, a generator? dont go in the cabin
         choice5B.addEventListener("click", function() {
             choice5B.style.backgroundColor = "red";
@@ -182,7 +167,7 @@ function addText1() {
 
 
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin
             choice6I.addEventListener("click", function() {
                 choice6I.style.backgroundColor = "red";
 
@@ -244,7 +229,7 @@ function addText1() {
 
 
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin, go downhill
                 choice11.addEventListener("click", function() {
                     choice11.style.backgroundColor = "red";
                     var firstParK = document.createElement("p");
@@ -304,7 +289,7 @@ function addText1() {
 
 
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriousely dont go in the cabin, go downhill, keep going downhill
                     choice14.addEventListener("click", function() {
 
                         choice14.style.backgroundColor = "red";
@@ -353,7 +338,7 @@ function addText1() {
 
 
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin, go downhill, go back uphill
 
                     choice14.addEventListener("click", function() {
 
@@ -441,7 +426,7 @@ function addText1() {
 
 
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin, go downhill, go back uphill, RUN!
                         choice16.addEventListener("click", function() {
 
                             choice16.style.backgroundColor = "red";
@@ -524,7 +509,7 @@ function addText1() {
 
                         });
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin, go downhill, go back uphill, signal your not a zombie.
                         choice15.addEventListener("click", function() {
 
                             choice15.style.backgroundColor = "red";
@@ -612,7 +597,7 @@ function addText1() {
 
 
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin, go uphill to find your family,
 
                     choice12.addEventListener("click", function() {
 
@@ -700,7 +685,7 @@ function addText1() {
 
 
 
-
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin, go uphill, RUN!
                         choice16.addEventListener("click", function() {
 
                             choice16.style.backgroundColor = "red";
@@ -783,6 +768,7 @@ function addText1() {
 
                         });
 
+//will, is that you?, where are you, a generator? dont go in the cabin, no seriously dont go in the cabin, signal your not a zombie!
 
                         choice15.addEventListener("click", function() {
 
@@ -928,7 +914,7 @@ function addText1() {
 
 
 
-                    //will, is that you?, where are you, a generator? dont go in the cabin, ok fine go in the cabin. go chekc out the smell.
+                    //will, is that you?, where are you, a generator? dont go in the cabin, ok fine go in the cabin. go check out the smell.
                     choice6J.addEventListener("click", function() {
                         choice6J.style.backgroundColor = "red";
                         var firstParK = document.createElement("p");
@@ -1602,7 +1588,7 @@ function addText1() {
 
                                 choicefiveD.addEventListener("click", function() {
 
-                                    choice14.style.backgroundColor = "red";
+                                    choicefiveD.style.backgroundColor = "red";
 
                                     var firstParD = document.createElement("p");
                                     var secondParD = document.createElement("p");
@@ -3598,21 +3584,6 @@ function addText1() {
                                     });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                 });
 
 
@@ -4046,20 +4017,6 @@ function addText1() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                     });
 
 
@@ -4149,7 +4106,7 @@ function addText1() {
                 });
             });
         });
-
+    });
         //Will is that you?, nice to her from you again.
 
         choice2.addEventListener("click", function() {
@@ -4960,25 +4917,6 @@ function addText1() {
                              *CONTINUE THIS CHOICE LATER
                              *CONTINUE THIS CHOICE LATER
                              */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                             choicefiveD.addEventListener("click", function() {
 
@@ -6675,13 +6613,6 @@ function addText1() {
 
 
 
-
-
-
-
-
-
-
                             });
 
 
@@ -6940,7 +6871,6 @@ function addText1() {
                 });
             });
         });
-    });
 }
 //this is the second option you can chose in the begining, thats not how the song goes.
 
@@ -8063,7 +7993,7 @@ function addText2() {
                             var eighthParD = document.createElement("p");
                             var ninthParD = document.createElement("p");
                             var tenthParD = document.createElement("p");
-                            var eleventhParD = docume.createElement("p");
+                            var eleventhParD = document.createElement("p");
                             var twelthParD = document.createElement("p");
                             var thirteenthParD = document.createElement("p");
                             var fourteenthParD = document.createElement("p");
@@ -12274,14 +12204,14 @@ function addText2() {
             });
         });
     });
-};
+}
 
 
 
 //addPara("words", "you");
 
 function addPara(words, speaker){
-    var tempEle = document.createElement("p")
+    var tempEle = document.createElement("p");
     tempEle.textContent = words;
     tempEle.className = speaker;
     container.appendChild(tempEle);
