@@ -50,25 +50,25 @@ Bot.prototype.botBrain = function() {
 
         // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
 
-        //
+        //This creates the variable for the enemy bots so I can use it in the future and make it so I can attack them.
         var enemyBots = [];
         var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
 
-        //
+        //This creates the ID for each bot.
         if (bot.yourBot.id != 1) enemyBots.push(bot.bot1);
         if (bot.yourBot.id != 2) enemyBots.push(bot.bot2);
         if (bot.yourBot.id != 3) enemyBots.push(bot.bot3);
         if (bot.yourBot.id != 4) enemyBots.push(bot.bot4);
 
 
-        //
+        //This creates the ID for enemy mines.
         var enemyMines = [];
         if (bot.yourBot.id != 1) enemyMines = enemyMines.concat(bot.bot1mines);
         if (bot.yourBot.id != 2) enemyMines = enemyMines.concat(bot.bot2mines);
         if (bot.yourBot.id != 3) enemyMines = enemyMines.concat(bot.bot3mines);
         if (bot.yourBot.id != 4) enemyMines = enemyMines.concat(bot.bot4mines);
 
-        //
+        //This is the code to find a free mine to get it.
         var nearMine = bot.freeMines[0];
         for (i = 0; i < bot.freeMines.length; i++) {
             if (bot.findDistance(myPos, nearMine) > bot.findDistance(myPos, bot.freeMines[i])) {
@@ -76,7 +76,7 @@ Bot.prototype.botBrain = function() {
             }
         }
         
-        //
+        //This is to find an enemy mine to get it
         var everyMine = enemyMines[0];
         for (i = 0; i < enemyMines.length; i++) {
             if (bot.findDistance(myPos, everyMine) > bot.findDistance(myPos, enemyMines[i])) {
@@ -88,7 +88,7 @@ Bot.prototype.botBrain = function() {
          *                                      */
         
         var task;
-        //
+        //This says if your bots health is low, then it escapes and goes to a tavern.
         if (bot.yourBot.life < 30) {
             task = "taverns";
         }
@@ -113,7 +113,7 @@ Bot.prototype.botBrain = function() {
             myDir = bot.findPath(myPos, closestMine);
         }
         
-        //
+        //This is the code to find a tavern.
         if (task === "taverns") {
             var closestTavern = bot.taverns[0];
             for (var i = 0; i < bot.taverns.length; i++) {
@@ -126,7 +126,7 @@ Bot.prototype.botBrain = function() {
             myDir = bot.findPath(myPos, closestTavern);
         }
         
-        //
+        //This is the code for attcking
         var attacking =  false;
         var victim = 0;
          if(enemyBots[0].mineCount > enemyBots[1].mineCount && enemyBots[0].mineCount > enemyBots[2].mineCount) { 
