@@ -3,7 +3,11 @@
     border:2px solid blue;
     padding:15px;
 }
-        
+li a:hover {
+    background-color: black;
+    color: white;
+    border:2px solid white;
+}  
         
 h1 {
             color:white;

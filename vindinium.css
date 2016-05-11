@@ -1,0 +1,43 @@
+h1{       
+    color: rgb(105,105,105);
+    border:3px gray solid;
+    display:inline-block;
+    padding:8px;
+    
+}
+h2{
+    color: rgb(105,105,105);
+}
+
+body{
+    background-color: rgb(250,235,215);
+    padding:20px;
+}
+p{
+    color:rgb(105,105,105);
+    font-size:22px;
+}
+pre{
+    border:2px black solid;
+    padding:20px;
+    
+    background-color: RGB(255,127,80)
+
+}
+li a:hover {
+    background-color: black;
+    color: white;
+    border:2px solid white;
+
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+    font-size:20px;
+    border:2px solid black;
+    margin:6px;
+    background-color:white;
+    text-align:center;
+}
